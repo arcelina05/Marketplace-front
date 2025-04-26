@@ -19,7 +19,7 @@ const Compras = () => {
 
   const cargarHistorial = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/v1/restaurante/ventas/listar');
+      const response = await axios.get('https://marketplace-back-ten.vercel.app/v1/restaurante/ventas/listar');
       setHistorial(response.data);
     } catch (error) {
       console.error('Error al cargar historial:', error);
