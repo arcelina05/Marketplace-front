@@ -16,7 +16,7 @@ function AdminHome({ user }) {
     // Funciones para sección de ventas
     const cargarVentas = async () => {
         try {
-            const response = await fetch('http://localhost:4000/v1/restaurante/ventas/listar')
+            const response = await fetch('https://marketplace-back-ten.vercel.app/v1/restaurante/ventas/listar')
             const data = await response.json()
             setVentas(data)
         } catch (error) {

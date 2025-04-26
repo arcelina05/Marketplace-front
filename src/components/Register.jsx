@@ -13,7 +13,7 @@ function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:4000/v1/restaurante/usuarios/crear-usuario', {
+            const response = await fetch('https://marketplace-back-ten.vercel.app/v1/restaurante/usuarios/crear-usuario', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -40,7 +40,7 @@ const handlePago = async (datosPago) => {
   try {
     const usuario = JSON.parse(localStorage.getItem('user'));
 
-    await axios.post('http://localhost:4000/v1/restaurante/ventas/crear-venta', {
+    await axios.post('https://marketplace-back-ten.vercel.app/v1/restaurante/ventas/crear-venta', {
       ...productoActual,
       ...datosPago,
       usuario: usuario
